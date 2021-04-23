@@ -25,6 +25,7 @@ Other specifics include the following:
 - Frame size of 28 bytes
 - 256 frames
 - Physical memory of 65,536 bytes (256 frames x 256-byte frame size)
+
 Additionally, your program need only be concerned with reading logical addresses and translating
 them to their corresponding physical addresses. You do not need to support writing to the logical
 address space.
