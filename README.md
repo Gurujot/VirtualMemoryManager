@@ -14,16 +14,17 @@ addresses. However, you need only be concerned with 16-bit addresses, so you mus
 rightmost 16 bits of each logical address. These 16 bits are divided into:
 (1) an 8-bit page number, and
 (2) an 8-bit page offset.
+
 Hence, the addresses are structured as shown in the figure below:
 
 <img width="337" alt="Screen Shot 2021-04-23 at 5 33 28 PM" src="https://user-images.githubusercontent.com/19552862/115931930-056d6780-a45a-11eb-810c-86a46ce867c3.png">
 
 Other specifics include the following:
-• 28 entries in the page table
-• Page size of 28 bytes
-• Frame size of 28 bytes
-• 256 frames
-• Physical memory of 65,536 bytes (256 frames x 256-byte frame size)
+- 28 entries in the page table
+- Page size of 28 bytes
+- Frame size of 28 bytes
+- 256 frames
+- Physical memory of 65,536 bytes (256 frames x 256-byte frame size)
 Additionally, your program need only be concerned with reading logical addresses and translating
 them to their corresponding physical addresses. You do not need to support writing to the logical
 address space.
